@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+} 
+
+/* header */
+
+.nav-container {
+  background-image: url('./public/header-bg.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: repeat;
+
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.navbar-left,
+.navbar-right {
+  flex: 0 0 auto;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 20px; /* Расстояние между центральными элементами */
+}

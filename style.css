@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0; 
@@ -5,14 +7,17 @@
 }
 
 body {
+  font-family: "Space Grotesk", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
   min-width: 320px;
   min-height: 100vh;
 } 
 
 /* header */
 
-.nav-container {
-  background-image: url('./public/header-bg.png');
+.navbar-container {
+  background-image: url('./header-bg.png');
   background-size: cover; 
   background-position: center; 
   background-repeat: repeat;
@@ -36,5 +41,60 @@ body {
   display: flex;
   justify-content: center;
   flex: 1;
-  gap: 20px; /* Расстояние между центральными элементами */
+  gap: 20px; 
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #181818;
+  font-weight: 500;
+  margin-right: 60px;
+}
+
+/* end header*/
+
+/* main */
+
+.content__center {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 50px auto 0 auto;
+  border: 1px solid red;
+  min-height: 500px;
+}
+
+.content__center div {
+  border: 1px solid yellow;
+  width: 100%
+}
+
+.content__center-left {
+  flex-grow: 2;
+}
+
+.content__center-center {
+  flex-grow: 6;
+}
+
+.content__center-right {
+  flex-grow: 2;
+}
+
+.content__center-left__cart {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.myImg {
+  width: 50%;
+  height: auto;
+}
+
+.line {
+  height: 3px;
+  max-width: 70%;
+  margin: 30px auto;
+  background-color: gray;
 }

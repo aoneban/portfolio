@@ -7,19 +7,50 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="nav-container">
-      <nav class="navbar">
-        <div class="navbar-left">Left Item</div>
+    <header class="navbar-container">
+      <nav id="navbar" class="navbar">
+        <a href="#" class="navbar-left">Logo</a>
         <div class="navbar-center">
-          <a href="#">Center Item 1</a>
-          <a href="#">Center Item 2</a>
-          <a href="#">Center Item 3</a>
-          <a href="#">Center Item 4</a>
-          <a href="#">Center Item 5</a>
+          <a href="#">Home</a>
+          <a href="#">About me</a>
+          <a href="#">Services</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
         </div>
-        <div class="navbar-right">Right Item</div>
+        <div class="navbar-right">Burger</div>
       </nav>
-    </div>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <div class="content__center">
+            <div class="content__center-left">
+              <div class="content__center-left__cart">
+                <img src="./bn-one-thumb.png" alt="myImg" class="myImg">
+                <h3>Ashot Bahiran</h3>
+                <p>Theme Frontend developer</p>
+                <p>Lives in Poznan, Poland</p>
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="content__center-center">
+              <div class="content__center-center__info">
+                <h1>Hi I'm Ashot,<br> Webflow Designer</h1>
+                <img src="shape.png" alt="shape">
+                <p class="text">My expertise lies in creating compelling user experiences for early-stage startups, 
+                  achieved by establishing a strong link between the unique.</p>
+                <div class="line"></div>
+                <div class="content__center-center__achievements">
+
+                </div>
+              </div>
+            </div>
+            <div class="content__center-right">3</div>
+          </div>
+          <div class="pin-spacer">Pin</div>
+        </div>
+      </section>
+    </main>
     <!-- <div id="app"></div> -->
     <script type="module" src="/index.js"></script>
   </body>

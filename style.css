@@ -444,3 +444,35 @@ body {
   font-size: 45px;
   margin: 30px 0;
 }
+
+.content__history {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+
+}
+
+.content__history-year {
+  color: #686868;
+  order: 1;
+  width: 20%;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.specialisation {
+  color: #686868;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 10px 0 20px 0;
+  padding-top: 10px;
+}
+
+.content__history-desc {
+  order: 5;
+  width: 80%;
+}

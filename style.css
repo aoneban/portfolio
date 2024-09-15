@@ -276,7 +276,7 @@ body {
 }
 
 .add {
-  right: 15px!important;
+  right: 15px !important;
   top: 1.4rem;
 }
 
@@ -336,7 +336,7 @@ body {
 }
 
 .hire-me span,
-.download-cv span{
+.download-cv span {
   position: relative;
 }
 
@@ -361,7 +361,7 @@ body {
 }
 
 .soc-youtube {
-  background-color: rgba(245, 39, 84, 0.1)
+  background-color: rgba(245, 39, 84, 0.1);
 }
 
 .soc-email {
@@ -369,7 +369,7 @@ body {
 }
 
 .soc-instagram {
-  background-color: rgba(127, 39, 198, 0.1)
+  background-color: rgba(127, 39, 198, 0.1);
 }
 
 .social a {
@@ -394,7 +394,7 @@ body {
 }
 
 .text-xs {
-  display: inline!important;
+  display: inline !important;
   width: auto;
 }
 
@@ -451,7 +451,6 @@ body {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #d9d9d9;
-
 }
 
 .content__history-year {
@@ -475,4 +474,75 @@ body {
 .content__history-desc {
   order: 5;
   width: 80%;
+}
+
+.first-image-gallery {
+  display: flex;
+  overflow: hidden;
+  margin: 20px 0;
+  gap: 2rem;
+}
+
+.second-image-gallery {
+  display: flex;
+  overflow: hidden;
+  margin: 20px 0;
+  gap: 2rem;
+}
+
+.cooperation {
+  max-width: 1440px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 40px 0;
+}
+
+.cooperation p:first-of-type {
+  font-size: 45px;
+  color: #949494;
+}
+
+.cooperation h5 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #949494;
+}
+
+.jump-email {
+  max-width: 1440px;
+  margin: 50px auto 90px auto;
+  text-align: center;
+  font-size: 110px;
+  font-weight: 500;
+  color: #181818;
+}
+
+.jump-email span {
+  display: inline-block;
+  padding: 20px;
+  text-transform: uppercase;
+  border-bottom: 10px solid #d9d9d9;
+}
+
+.footer-container {
+  background-image: url('./footer-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-container p {
+  color: #949494;
 }

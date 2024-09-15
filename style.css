@@ -574,3 +574,19 @@ body {
 .bar2 {
   top: 23px;
 }
+
+.hidden {
+  display: none;
+}
+
+.change-header {
+  position: fixed;
+  display: block;
+  top: 0!important;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  border-bottom: 1px solid #d9d9d9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: top 1s;
+}

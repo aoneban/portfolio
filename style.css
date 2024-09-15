@@ -28,8 +28,9 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 35px 10px;
 }
 
 .navbar-left,
@@ -545,4 +546,30 @@ body {
 
 .footer-container p {
   color: #949494;
+}
+
+.burger-menu {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #181818;
+  border-radius: 50%;
+}
+
+.bar1, .bar2 {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 15px;
+  background-color: #ede5e5;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar1 {
+  top: 13px;
+}
+.bar2 {
+  top: 23px;
 }

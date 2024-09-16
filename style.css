@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import './styles/loader.css';
+@import './styles/introduction.css';
 
 * {
   margin: 0;
@@ -137,14 +138,16 @@ body {
   color: #181818;
   font-weight: 500;
   font-size: 55px;
+  line-height: 4rem;
 }
 
 .text {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .case,
 .about-me {
+  overflow: hidden;
   text-align: center;
   font-weight: 500;
   margin: 3rem auto;
@@ -152,13 +155,22 @@ body {
   color: #181818;
 }
 
+.hidden__case {
+  overflow: hidden;
+}
+
 .about-me::after {
   content: ' Me';
   color: #f70354;
 }
 
-.case::after {
-  content: ' Study';
+.hidden__case-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.case2 {
   color: #f70354;
 }
 
@@ -590,3 +602,4 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: top 1s;
 }
+

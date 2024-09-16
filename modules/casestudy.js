@@ -4,3 +4,4 @@ export default function caseStudy() {
   case1.classList.add('offset');
   case2.classList.add('offset2');
 }
+

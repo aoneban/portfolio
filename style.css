@@ -137,7 +137,7 @@ body {
 
 .content__center-center__info {
   border: 1px solid #d9d9d9 !important;
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
   border-radius: 40px;
 }
 
@@ -146,6 +146,7 @@ body {
   font-weight: 500;
   font-size: 55px;
   line-height: 4rem;
+  padding: 40px 0 0 0;
 }
 
 .text {
@@ -155,7 +156,6 @@ body {
 .case,
 .about-me {
   overflow: hidden;
-  text-align: center;
   font-weight: 500;
   margin: 3rem auto;
   font-size: 45px;
@@ -405,7 +405,7 @@ body {
 
 .bn-blog {
   border-radius: 25px;
-  margin: 25px 0;
+  margin: -15px 0 25px 0;
 }
 
 .awards {
@@ -479,20 +479,6 @@ body {
 .content__history-desc {
   order: 5;
   width: 80%;
-}
-
-.first-image-gallery {
-  display: flex;
-  overflow: hidden;
-  margin: 20px 0;
-  gap: 2rem;
-}
-
-.second-image-gallery {
-  display: flex;
-  overflow: hidden;
-  margin: 20px 0;
-  gap: 2rem;
 }
 
 .cooperation {
@@ -679,7 +665,7 @@ body {
 }
 
 .btn-animation span {
-  left: 9px;
+  left: 10px;
   position: relative;
   opacity: 0;
   display: inline-block;
@@ -729,12 +715,11 @@ body {
   left: 11%;
   transform: translateY(-50%);
   font-weight: 700;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
   white-space: nowrap;
 }
 
 .btn:hover .text-old {
-  border: 1px solid #181818;
   transform: translateY(100%);
   opacity: 0;
 }
@@ -749,4 +734,55 @@ body {
 
 .btn:hover i {
   color: #242020;
+}
+
+.wx-1,
+.wx-3,
+.wx-5 {
+  font-size: 55px;
+  color: #181818;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.wx-2,
+.wx-6 {
+  font-size: 55px;
+  color: #181818;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.wx-4 {
+  font-size: 55px;
+  color: #f70354;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #181818;
+  padding: 2px;
+}
+
+.img__gallery-wrapper {
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.first__image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 40px 0 60px 0;
+  gap: 4rem;
+  transition: transform 3s ease;
+}
+
+.second__image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+  gap: 4rem;
+  transition: transform 3s ease;
 }

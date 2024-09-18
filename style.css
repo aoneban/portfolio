@@ -502,22 +502,6 @@ body {
   color: #949494;
 }
 
-.jump-email {
-  max-width: 1440px;
-  margin: 50px auto 90px auto;
-  text-align: center;
-  font-size: 110px;
-  font-weight: 500;
-  color: #181818;
-}
-
-.jump-email span {
-  display: inline-block;
-  padding: 20px;
-  text-transform: uppercase;
-  border-bottom: 10px solid #d9d9d9;
-}
-
 .footer-container {
   background-image: url('./footer-bg.png');
   background-size: cover;

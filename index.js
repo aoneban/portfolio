@@ -9,6 +9,8 @@ import myIntroduction from './modules/introduction.js';
 import animationToRightSidebar from './modules/animationsidebar.js';
 import observerFirstGallery from './modules/firstgallery.js';
 import observerSecondGallery from './modules/secondgallery.js';
+import emailDancing from './modules/emaildance.js';
+import scrollControl from './modules/controlscrolling.js';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
@@ -27,22 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
   interObserver3();
   observerFirstGallery();
   observerSecondGallery();
-  emailDancing("hello@exgrid",'.jump-email-first');
-  emailDancing("info.com", '.jump-email-second')
+  emailDancing('hello@exgrid', '.jump-email-first');
+  emailDancing('info.com', '.jump-email-second');
+  scrollControl();
 });
 
-function emailDancing(elem1, elem2) {
-  const text = elem1;
-  const textContainer = document.querySelector(elem2);
-  const arr = text.split('');
-  
-  arr.forEach((char, index) => {
-    const span = document.createElement('span');
-    span.classList.add('bouncing-letter');
-
-    span.textContent = char
-    textContainer.appendChild(span);
-    
-    span.style.animationDelay = `${index * 0.05}s`;
-  });
-}

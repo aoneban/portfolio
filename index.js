@@ -14,7 +14,6 @@ import scrollControl from './modules/controlscrolling.js';
 import openNav from './modules/modalwindow.js';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
-import { setupCounter } from './counter.js';
 
 powerLoader();
 window.onscroll = function () {

@@ -11,6 +11,7 @@ import observerFirstGallery from './modules/firstgallery.js';
 import observerSecondGallery from './modules/secondgallery.js';
 import emailDancing from './modules/emaildance.js';
 import scrollControl from './modules/controlscrolling.js';
+import openNav from './modules/modalwindow.js';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
@@ -32,5 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
   emailDancing('hello@exgrid', '.jump-email-first');
   emailDancing('info.com', '.jump-email-second');
   scrollControl();
+  openNav();
 });
+
+
+
+
 

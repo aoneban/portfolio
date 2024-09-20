@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import './styles/loader.css';
 @import './styles/introduction.css';
+@import './styles/modal.css';
 
 * {
   margin: 0;
@@ -529,6 +530,28 @@ body {
   height: 50px;
   background-color: #181818;
   border-radius: 50%;
+  border: 1px solid #181818;
+}
+
+.burger-menu:hover {
+  border: 1px solid #f70354;
+}
+
+.burger-menu:hover .bar1,
+.burger-menu:hover .bar2{
+  background-color: #f70354;
+}
+
+.forbar {
+  transform: translateY(5px);
+  background-color: #f70354!important;
+  transition: 0.3 ease;
+}
+
+.forbar2 {
+  transform: translateY(-5px);
+  background-color: #f70354!important;
+  transition: 0.3 ease;
 }
 
 .bar1,
@@ -536,7 +559,7 @@ body {
   position: absolute;
   width: 20px;
   height: 2px;
-  left: 15px;
+  left: 14px;
   background-color: #ede5e5;
   margin: 6px 0;
   transition: 0.4s;

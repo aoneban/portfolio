@@ -12,6 +12,7 @@ import observerSecondGallery from './modules/secondgallery.js';
 import emailDancing from './modules/emaildance.js';
 import scrollControl from './modules/controlscrolling.js';
 import openNav from './modules/modalwindow.js';
+import movedImages from './modules/moveimages.js';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 
@@ -33,9 +34,5 @@ document.addEventListener('DOMContentLoaded', () => {
   emailDancing('info.com', '.jump-email-second');
   scrollControl();
   openNav();
+  movedImages();
 });
-
-
-
-
-

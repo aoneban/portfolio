@@ -39,3 +39,5 @@ document.addEventListener('DOMContentLoaded', () => {
   launchCursorMoving('.cursor', -16, -16, 0.2);
   launchCursorMoving('.circle', -16, -16, 0.1);
 });
+
+

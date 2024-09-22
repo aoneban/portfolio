@@ -542,19 +542,19 @@ body {
 }
 
 .burger-menu:hover .bar1,
-.burger-menu:hover .bar2{
+.burger-menu:hover .bar2 {
   background-color: #f70354;
 }
 
 .forbar {
   transform: translateY(5px);
-  background-color: #f70354!important;
+  background-color: #f70354 !important;
   transition: 0.3 ease;
 }
 
 .forbar2 {
   transform: translateY(-5px);
-  background-color: #f70354!important;
+  background-color: #f70354 !important;
   transition: 0.3 ease;
 }
 
@@ -832,8 +832,7 @@ body {
 ::-webkit-scrollbar-track {
   background: rgb(206, 236, 241);
   border-radius: 10px;
-  box-shadow: inset 0px 20px 0px 0px #f70354,
-              inset 0px -20px 0px 0px #f70354;
+  box-shadow: inset 0px 20px 0px 0px #f70354, inset 0px -20px 0px 0px #f70354;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -885,3 +884,28 @@ body {
   z-index: 1000;
 }
 
+.pin-spacer {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  left: 80px;
+  top: 700px;
+}
+
+.tag-name {
+  margin: 0px;
+  max-width: 55px;
+  width: 55px;
+  padding: 0px;
+ /*  transform: rotate(180deg) skew(360deg, 0deg); */
+}
+
+.tag-name h2 {
+  z-index: auto;
+  opacity: 1;
+  transform: rotate(270deg);
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #eee;
+}

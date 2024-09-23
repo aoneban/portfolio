@@ -14,6 +14,7 @@ import scrollControl from '../index/controlscrolling.js';
 import openNav from '../index/modalwindow.js';
 import movedImages from '../index/moveimages.js';
 import launchCursorMoving from '../index/cursormoving.js';
+import currentPage from '../index/currentpage.js';
 import viteLogo from '/vite.svg';
 
 powerLoader();
@@ -37,4 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   movedImages();
   launchCursorMoving('.cursor', -16, -16, 0.2);
   launchCursorMoving('.circle', -16, -16, 0.1);
+  currentPage();
 });
+

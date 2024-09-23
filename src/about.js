@@ -2,6 +2,7 @@ import '../style.css';
 import powerLoader from '../about/loader.js';
 import scrollFunction from '../about/scrollheader.js';
 import emailDancing from '../about/emaildance.js';
+import currentPage from '../index/currentpage.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -11,4 +12,5 @@ window.onscroll = function () {
 document.addEventListener('DOMContentLoaded', () => {
   emailDancing('hello@exgrid', '.jump-email-first');
   emailDancing('info.com', '.jump-email-second');
+  currentPage();
 });

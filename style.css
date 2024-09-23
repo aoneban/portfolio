@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Space Grotesk', system-ui;
   font-optical-sizing: auto;
@@ -50,10 +54,20 @@ body {
 
 .navbar-center a {
   text-decoration: none;
-  color: #181818;
   font-weight: 500;
   margin-right: 60px;
 }
+
+.nav-link {
+  color: #181818;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #f70354!important;
+}
+
+
 
 .navbar-center a:hover {
   color: #f70354;

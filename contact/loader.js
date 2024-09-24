@@ -5,6 +5,7 @@ export default function powerLoader() {
       preloader.style.display = 'none';
 
       document.getElementById('header').style.display = 'block';
+      document.getElementById('main').style.display = 'block';
       document.getElementById('footer').style.display = 'block';
       deleteLoader();
     }, 1000);

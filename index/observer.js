@@ -1,4 +1,4 @@
-export default   function interObserver() {
+export default function interObserver() {
     const hiddenBlocks = document.querySelectorAll('.hidden-block');
     const options = {
       threshold: 0.2,

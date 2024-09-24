@@ -24,13 +24,6 @@ body {
 
 /* header */
 
-.navbar-container {
-  background-image: url('./header-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-}
-
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
@@ -539,13 +532,6 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   color: #949494;
-}
-
-.footer-container {
-  background-image: url('./footer-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
 }
 
 .footer-content {

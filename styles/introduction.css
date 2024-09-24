@@ -1,5 +1,19 @@
 /* animation for introduction letters*/
 
+.navbar-container {
+  background-image: url('../header-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.footer-container {
+  background-image: url('../footer-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
 .letter {
   display: inline-block;
   opacity: 0;

@@ -57,10 +57,8 @@ body {
 }
 
 .nav-link.active {
-  color: #f70354!important;
+  color: #f70354 !important;
 }
-
-
 
 .navbar-center a:hover {
   color: #f70354;
@@ -77,7 +75,6 @@ body {
   margin: 70px auto 0 auto;
   gap: 84px;
 }
-
 
 .content__center-left {
   flex-grow: 1;
@@ -220,7 +217,7 @@ body {
 }
 
 .banner-sidebar:hover a span {
-  color: #f70354!important;
+  color: #f70354 !important;
 }
 
 .last {
@@ -309,10 +306,9 @@ body {
 .content__center-center__cases {
   border-top: 1px solid #d9d9d9;
   padding: 50px 0 0 0;
-  
 }
 
-.content__center-center__cases:hover .tags a{
+.content__center-center__cases:hover .tags a {
   color: #f70354;
   border: 1px solid #181818;
   transition: border 0.6s ease;
@@ -917,7 +913,7 @@ body {
   max-width: 55px;
   width: 55px;
   padding: 0px;
- /*  transform: rotate(180deg) skew(360deg, 0deg); */
+  /*  transform: rotate(180deg) skew(360deg, 0deg); */
 }
 
 .tag-name h2 {
@@ -943,7 +939,7 @@ body {
 
 .contact a {
   text-decoration: none;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-weight: 600;
 }
 
@@ -958,7 +954,7 @@ body {
 }
 
 .information p {
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-weight: 600;
 }
 
@@ -982,7 +978,7 @@ body {
   margin: 20px auto;
 }
 
-.contact-info h4{
+.contact-info h4 {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
@@ -990,7 +986,7 @@ body {
 }
 
 .block-contact p a {
-  color: #414141!important;
+  color: #414141 !important;
   text-decoration: none;
   margin: 20px 0;
 }
@@ -999,7 +995,7 @@ body {
   margin: 20px 0;
 }
 
-.contact__wrapper { 
+.contact__wrapper {
   max-width: 1440px;
   overflow: hidden;
   margin: 0 auto;
@@ -1007,7 +1003,6 @@ body {
 
 .connection-me {
   display: flex;
-  flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1015,38 +1010,129 @@ body {
 }
 
 .map-wrapper {
-  width: 50%;
+  flex-grow: 1;
+  height: 600px;
+  flex: 50%;
 }
 
 .contact-form {
-  width: 50%;
+  flex-grow: 1;
+  flex: 50%;
 }
 
-input[type=text], select, textarea {
+input[type='text'],
+input[type='email'],
+select,
+textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  font-family: 'Space Grotesk', system-ui;
+  color: gray;
+  font-size: 16px;
+  border: none;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  background-color: #f2f2f2;
+  outline: none!important;
+  box-shadow: none;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+input[type='submit'] {
+  background-color: #f2f2f2;
+  color: #181818;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 60px;
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
   cursor: pointer;
+  margin: 27px 0;
+  transition: 0.3s ease;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+input[type='submit']:hover {
+  border: 1px solid #f70354;
+  color: #f70354;
+}
+
+textarea::placeholder {
+  color: gray;
+  font-size: 16px;
+  font-family: 'Space Grotesk', system-ui;
+  opacity: 1;
+}
+
+#fname {
+  margin-right: 25px;
+}
+
+#fname,
+#email,
+#subject,
+#message {
+  border-bottom: 2px solid #d9d9d9;
+}
+
+input:active,
+input:hover,
+input:focus {
+outline: none;
 }
 
 .container-form {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.container-form h3 {
+  padding: 20px 0 60px 15px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.change {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-trigger {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option {
+  padding: 10px 30px;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.option:hover {
+  background-color: #f3f3f3;
+  padding: 10px 30px;
+}
+
+.custom-select.open .options {
+  display: block;
+}
+

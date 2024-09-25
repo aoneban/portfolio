@@ -107,42 +107,43 @@
               <div id="map" style="height: 600px; width: 100%"></div>
             </div>
             <div class="contact-form hidden-block">
-
               <div class="container-form">
                 <h3>Leave A Message</h3>
                 <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="firstname"
-                    placeholder="Your name.."
-                  />
-
-                  <label for="lname">Last Name</label>
-                  <input
-                    type="text"
-                    id="lname"
-                    name="lastname"
-                    placeholder="Your last name.."
-                  />
-
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-
-                  <label for="subject">Subject</label>
+                  <div class="change">
+                    <label for="fname"></label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Name"
+                    />
+                    <label for="email"></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="custom-select">
+                    <div class="select-trigger">Subject</div>
+                    <ul class="options">
+                      <li class="option">Subject</li>
+                      <li class="option">Account</li>
+                      <li class="option">Support</li>
+                      <li class="option">Service</li>
+                      <li class="option">Pricing</li>
+                    </ul>
+                  </div>
+                  <label for="message"></label>
                   <textarea
-                    id="subject"
-                    name="subject"
-                    placeholder="Write something.."
-                    style="height: 200px"
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    style="height: 190px"
                   ></textarea>
-
-                  <input type="submit" value="Submit" />
+                  <input type="submit" value="Send Message" />
                 </form>
               </div>
             </div>

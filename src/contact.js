@@ -5,6 +5,8 @@ import emailDancing from '../contact/emaildance.js';
 import currentPage from '../contact/currentpage.js';
 import showContact from '../contact/showcontact.js';
 import showBlocksContact from '../contact/blockofcontacts.js';
+import customOptions from '../contact/customoptions.js';
+import initMap from '../contact/googlemap.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -18,15 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   showContact();
   showBlocksContact();
   initMap();
+  customOptions();
 });
 
-let map;
-
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat: 52.4064, lng: 16.9252 },
-    zoom: 12,
-  });
-}

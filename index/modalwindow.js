@@ -11,6 +11,7 @@ function closeNav() {
 
 function showModalWindow() {
   document.getElementById('myNav').style.display = 'block';
+  document.body.classList.add('no-scroll');
   setTimeout(() => {
     document.querySelector('.overlay').classList.add('active');
     document.querySelector('.bar1').classList.add('forbar');
@@ -20,6 +21,7 @@ function showModalWindow() {
 
 function hideModalWindow() {
   document.getElementById('myNav').style.display = 'none';
+  document.body.classList.remove('no-scroll');
   document.querySelector('.overlay').classList.remove('active');
   document.querySelector('.bar1').classList.remove('forbar');
   document.querySelector('.bar2').classList.remove('forbar2');

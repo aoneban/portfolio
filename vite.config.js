@@ -10,7 +10,7 @@ export default defineConfig({
         contact: 'contact.html'
       },
       output: {
-        assetFileNames: 'assets/[name].[hash][extname]', // Настройка имен ассетов
+        assetFileNames: 'assets/[name].[hash][extname]',
       },
     },
   },

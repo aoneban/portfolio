@@ -8,6 +8,8 @@ import showBlocksContact from '../contact/blockofcontacts.js';
 import customOptions from '../contact/customoptions.js';
 import initMap from '../contact/googlemap.js';
 import interObserver from '../contact/observer.js';
+import openNav from '../contact/modalwindow.js';
+import scrollControl from '../contact/controlscrolling.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -23,5 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   customOptions();
   interObserver()
+  openNav();
+  scrollControl();
 });
 

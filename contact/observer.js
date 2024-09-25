@@ -1,7 +1,5 @@
-import aboutMe from "./aboutme";
-
-export default function interObserver3() {
-    const hiddenBlocks = document.querySelectorAll('.hidden-block3');
+export default function interObserver() {
+    const hiddenBlocks = document.querySelectorAll('.hidden-block');
     const options = {
       threshold: 0.2,
     };
@@ -9,8 +7,7 @@ export default function interObserver3() {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          aboutMe();
+          entry.target.classList.add('letter');
           observer.unobserve(entry.target);
         }
       });

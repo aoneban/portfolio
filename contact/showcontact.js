@@ -1,6 +1,6 @@
-export default function showContact() {
-    const text = "Contact\u00A0Me";
-    const textContainer = document.getElementById('contact');
+export default function showContact(item, idname) {
+    const text = item;
+    const textContainer = document.getElementById(idname);
     const arr = text.split('');
   
     arr.forEach((char, index) => {

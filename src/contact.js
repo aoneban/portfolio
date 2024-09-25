@@ -7,6 +7,7 @@ import showContact from '../contact/showcontact.js';
 import showBlocksContact from '../contact/blockofcontacts.js';
 import customOptions from '../contact/customoptions.js';
 import initMap from '../contact/googlemap.js';
+import interObserver from '../contact/observer.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -17,9 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   emailDancing('hello@exgrid', '.jump-email-first');
   emailDancing('info.com', '.jump-email-second');
   currentPage();
-  showContact();
+  showContact("Contact\u00A0Me", 'contact');
   showBlocksContact();
   initMap();
   customOptions();
+  interObserver()
 });
 

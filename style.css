@@ -941,10 +941,11 @@ body.no-scroll {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 20px;
 }
 
-.information {
-  margin-top: 20px;
+.information a:hover {
+  color: #f70354;
 }
 
 .information p {
@@ -1421,21 +1422,58 @@ input:checked + .slider:before {
 .container__expir {
   max-width: 1440px;
   display: flex;
-  flex-wrap: wrap; /* Чтобы элементы переносились на новую строку */
-  gap: 13px; /* Промежуток между элементами */
-  justify-content: space-between; /* Равномерно распределяем элементы */
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: space-between;
   margin: 50px auto;
 }
 
 .expir {
-  flex-basis: calc(
-    50% - 13px
-  ); /* Делаем ширину каждого элемента равной 50% минус 15px для учета gap */
-  box-sizing: border-box; /* Учитываем padding в размере элемента */
+  flex-basis: calc(50% - 13px);
+  box-sizing: border-box;
   padding: 30px;
   border-radius: 30px;
   border: 1px solid #d9d9d9;
   margin-bottom: 10px;
+  transition: transform 1.5s ease;
+}
+
+.exps {
+  color: #686868;
+}
+
+.edcn {
+  color: #686868;
+}
+
+.exps.col {
+  color: #181818;
+}
+
+.edcn.col {
+  color: #181818;
+}
+.col2 {
+  color: #181818;
+}
+
+.newclass {
+  animation: bounces 1s ease;
+}
+
+@keyframes bounces {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .expir span {

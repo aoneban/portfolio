@@ -8,6 +8,8 @@ import showContact from '../about/showcontact.js';
 import scrollControl from '../about/controlscrolling.js';
 import launchCursorMoving from '../about/cursormoving.js';
 import switcher from '../about/switcher.js';
+import iBring from '../about/ibring.js';
+import typingText from '../about/typingtext.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -24,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
   launchCursorMoving('.cursor', -16, -16, 0.2);
   launchCursorMoving('.circle', -16, -16, 0.1);
   switcher();
+  iBring();
+  typingText();
 });
 
 

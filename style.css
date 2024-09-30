@@ -1357,6 +1357,7 @@ input:focus {
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
+  margin-right: 20px;
   font-weight: 700;
 }
 
@@ -1457,17 +1458,17 @@ input:checked + .slider:before {
   color: #181818;
 }
 
-.newclass {
-  animation: bounces 1s ease;
+.new-class {
+  animation: bounces 2s ease;
 }
 
 @keyframes bounces {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(50px);
   }
-  60% {
-    opacity: 0.7;
+  50% {
+    opacity: 1;
     transform: translateY(0);
   }
   100% {

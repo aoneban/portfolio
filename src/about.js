@@ -7,6 +7,7 @@ import openNav from '../about/modalwindow.js';
 import showContact from '../about/showcontact.js';
 import scrollControl from '../about/controlscrolling.js';
 import launchCursorMoving from '../about/cursormoving.js';
+import switcher from '../about/switcher.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -22,23 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollControl();
   launchCursorMoving('.cursor', -16, -16, 0.2);
   launchCursorMoving('.circle', -16, -16, 0.1);
+  switcher();
 });
 
-const switcher = document.getElementById('switcher');
-switcher.addEventListener('click', () => {
-  const ex = document.querySelectorAll('.expir');
-  ex.forEach((elem) => {
-    if (!elem.classList.contains('hidden')) {
-      elem.classList.add('hidden');
-      elem.classList.remove('newclass');
-      document.querySelector('.exps').classList.remove('col');
-      document.querySelector('.edcn').classList.add('col');
-      document.querySelector('.edcn').classList.remove('col2');
-    } else {
-      elem.classList.remove('hidden');
-      elem.classList.add('newclass');
-      document.querySelector('.exps').classList.add('col');
-      document.querySelector('.edcn').classList.remove('col');
-    }
-  });
-});
+

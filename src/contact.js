@@ -11,6 +11,7 @@ import interObserver from '../contact/observer.js';
 import openNav from '../contact/modalwindow.js';
 import scrollControl from '../contact/controlscrolling.js';
 import launchCursorMoving from '../contact/cursormoving.js';
+import mailService from '../contact/mailservice.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -30,5 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   interObserver()
   openNav();
   scrollControl();
+  mailService();
 });
+
 

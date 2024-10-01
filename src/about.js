@@ -31,9 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   switcher();
   iBring();
   typingText();
-  fillBar()
-  interObserver4()
-  interObserver5()
+  fillBar();
+  interObserver4();
+  interObserver5();
 });
-
-

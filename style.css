@@ -1219,6 +1219,14 @@ input:focus {
   font-size: 18px;
   line-height: 26px;
   cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.icons-wrapper a:hover  {
+  color: #fff;
+  border-color: #f70354;
+  background-color: #f70354;
+  transition: 0.4s ease;
 }
 
 .social-icons {

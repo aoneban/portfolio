@@ -10,6 +10,7 @@ import launchCursorMoving from '../about/cursormoving.js';
 import switcher from '../about/switcher.js';
 import iBring from '../about/ibring.js';
 import typingText from '../about/typingtext.js';
+import fillBar from '../about/fillingbar.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -28,6 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   switcher();
   iBring();
   typingText();
+  fillBar()
 });
-
 

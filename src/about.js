@@ -11,6 +11,8 @@ import switcher from '../about/switcher.js';
 import iBring from '../about/ibring.js';
 import typingText from '../about/typingtext.js';
 import fillBar from '../about/fillingbar.js';
+import interObserver4 from '../about/observer4.js';
+import interObserver5 from '../about/observer5.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -30,5 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
   iBring();
   typingText();
   fillBar()
+  interObserver4()
+  interObserver5()
 });
+
 

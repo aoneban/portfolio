@@ -220,6 +220,10 @@ body.no-scroll {
   color: #f70354 !important;
 }
 
+.banner-sidebar:hover a span i{
+  color: #f70354;
+}
+
 .last {
   padding: 25px 25px 0 25px !important;
 }
@@ -270,9 +274,14 @@ body.no-scroll {
 }
 
 .fa-circle-arrow-right {
+  color: #686868;
   position: absolute;
   top: 0.6rem;
   right: -1.2rem;
+}
+
+.fa-cloud-arrow-down {
+  color: #686868;
 }
 
 .achieve p {
@@ -317,7 +326,7 @@ body.no-scroll {
 .tags a {
   text-decoration: none;
   margin: 3px;
-  padding: 6px 12px;
+  padding: 6px 20px;
   border: 1px solid #d9d9d9;
   border-radius: 15px;
   font-size: 14px;
@@ -327,6 +336,11 @@ body.no-scroll {
   transition: border 0.6s ease;
 }
 
+.content__center-center__cases:hover .title-s {
+  color: #181818;
+  transition: 0.3s ease;
+}
+
 .content__center-s {
   display: flex;
   align-items: center;
@@ -334,11 +348,18 @@ body.no-scroll {
   margin: 20px 0 50px 0;
 }
 
+.content__center-s:hover .title-s {
+  color: #181818;
+  transition: 0.3s ease;
+}
+
 .title-s {
+  text-transform: capitalize;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
   color: #686868;
+  transition: 0.3s ease;
 }
 
 .text-s {
@@ -348,6 +369,7 @@ body.no-scroll {
 
 .hire-me,
 .download-cv {
+  cursor: pointer;
   margin-top: 30px;
   width: 100%;
   font-size: 16px;
@@ -377,6 +399,16 @@ body.no-scroll {
   font-size: 1rem;
   text-decoration: none;
   justify-content: space-between;
+}
+
+.hire-me:hover,
+.download-cv:hover{
+  border: 1px solid #181818;
+}
+
+.hire-me:hover .fa-circle-arrow-right,
+.download-cv:hover .fa-cloud-arrow-down {
+  color: #181818;
 }
 
 .social {

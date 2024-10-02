@@ -26,7 +26,7 @@ export default function mailService() {
         if (response.ok) {
           const result = await response.json();
           console.log('Success:', result);
-          alert('Message Sent!');
+          alert('A message has already been sent!');
         } else {
           console.error('Error:', response.statusText);
           alert('Error sending message.');

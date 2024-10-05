@@ -13,6 +13,7 @@ import typingText from '../about/typingtext.js';
 import fillBar from '../about/fillingbar.js';
 import interObserver4 from '../about/observer4.js';
 import interObserver5 from '../about/observer5.js';
+import currentYear from '../about/currentyear.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -34,4 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
   fillBar();
   interObserver4();
   interObserver5();
+  currentYear();
 });

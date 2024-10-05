@@ -12,6 +12,7 @@ import openNav from '../contact/modalwindow.js';
 import scrollControl from '../contact/controlscrolling.js';
 import launchCursorMoving from '../contact/cursormoving.js';
 import mailService from '../contact/mailservice.js';
+import currentYear from '../contact/currentyear.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   openNav();
   scrollControl();
   mailService();
+  currentYear();
 });
 
 

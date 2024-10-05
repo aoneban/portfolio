@@ -220,7 +220,7 @@ body.no-scroll {
   color: #f70354 !important;
 }
 
-.banner-sidebar:hover a span i{
+.banner-sidebar:hover a span i {
   color: #f70354;
 }
 
@@ -377,6 +377,7 @@ body.no-scroll {
   border: 1px solid #d9d9d9;
   border-radius: 20px;
   font-weight: 700;
+  transition: 0.3s ease;
 }
 
 .hire-me {
@@ -402,13 +403,15 @@ body.no-scroll {
 }
 
 .hire-me:hover,
-.download-cv:hover{
+.download-cv:hover {
   border: 1px solid #181818;
+  transition: 0.3s ease;
 }
 
 .hire-me:hover .fa-circle-arrow-right,
 .download-cv:hover .fa-cloud-arrow-down {
   color: #181818;
+  transition: 0.3s ease;
 }
 
 .social {
@@ -549,7 +552,9 @@ body.no-scroll {
   color: #949494;
 }
 
-.cooperation h5 {
+.send-message a {
+  cursor: pointer;
+  text-decoration: none;
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1254,7 +1259,7 @@ input:focus {
   transition: 0.4s ease;
 }
 
-.icons-wrapper a:hover  {
+.icons-wrapper a:hover {
   color: #fff;
   border-color: #f70354;
   background-color: #f70354;
@@ -1315,6 +1320,18 @@ input:focus {
   width: 50px;
   height: 2px;
   background-color: #d9d9d9;
+}
+
+pre {
+  height: 10px;
+}
+
+.address {
+  font-family: 'Space Grotesk', system-ui;
+  font-size: 16px;
+  padding-top: 20px;
+  color: #414141 !important;
+  text-decoration: none;
 }
 
 .skill-wrap {

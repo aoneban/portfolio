@@ -28,6 +28,11 @@ body.no-scroll {
 
 /* header */
 
+.logo {
+  width: 70%;
+  height: auto;
+}
+
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
@@ -525,6 +530,7 @@ body.no-scroll {
 }
 
 .specialisation {
+  text-transform: capitalize;
   color: #686868;
   line-height: 40px;
   font-weight: 700;
@@ -656,7 +662,6 @@ body.no-scroll {
 }
 
 .content__history-wrapper {
-  cursor: pointer;
   position: relative;
   overflow: hidden;
 }

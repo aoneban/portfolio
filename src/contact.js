@@ -20,8 +20,8 @@ window.onscroll = function () {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  emailDancing('hello@exgrid', '.jump-email-first');
-  emailDancing('info.com', '.jump-email-second');
+  emailDancing('prosperity.devops', '.jump-email-first');
+  emailDancing('@gmail.com', '.jump-email-second');
   currentPage();
   showContact("Contact\u00A0Me", 'contact');
   launchCursorMoving('.cursor', -16, -16, 0.2);

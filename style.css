@@ -130,6 +130,7 @@ body.no-scroll {
 
 .content__center-center__achievements {
   display: flex;
+  justify-content: space-between;
 }
 
 .name-dev {
@@ -311,10 +312,62 @@ body.no-scroll {
   align-items: center;
 }
 
+.mobile__block {
+  display: none;
+}
+
+.mobile__block-cart {
+  border: 1px solid #d9d9d9;
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.mobile__block-left {
+  order: 1;
+  width: 45%;
+}
+
+.mobile__block-right {
+  order: 1;
+  width: 55%;
+}
+
+.mobile__block-right h3 {
+  font-size: 2rem;
+}
+
+.mobile__block-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.mobile__block-right p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.hiring__block {
+  display: flex;
+  gap: 30px;
+}
+
+.hiring__block .hire-me,
+.hiring__block .download-cv {
+  margin: 0;
+}
+
 .add-arrow {
   right: 15px !important;
   top: 1.4rem;
-  color: #8b99b1;
 }
 
 .content__center-center__cases {
@@ -548,6 +601,7 @@ body.no-scroll {
   max-width: 1440px;
   margin: 80px auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #d9d9d9;
   padding: 40px 0;
@@ -588,6 +642,10 @@ body.no-scroll {
   background-color: #181818;
   border-radius: 50%;
   border: 1px solid #181818;
+}
+
+.burger-clone {
+  display: none;
 }
 
 .burger-menu:hover {
@@ -1576,4 +1634,188 @@ input:checked + .slider:before {
 
 .typed-text {
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1590px) {
+  .progress__wrap {
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .content__center {
+    gap: 24px;
+  }
+  .cooperation {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content__center-center {
+    width: 50%;
+  }
+
+  .content__center-right {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-center a {
+    margin-right: 40px;
+  }
+
+  .navbar-center {
+    justify-content: start;
+  }
+  .bouncing-letter {
+    font-size: 90px;
+  }
+  .jump-email span {
+    left: -6px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .navbar-center a {
+    margin-right: 20px;
+  }
+  .representation {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .navbar-left {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jump-email-first,
+  .jump-email-second {
+    border: none;
+  }
+  .jump-email span {
+    left: -12px;
+  }
+  .bouncing-letter {
+    font-size: 67px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .burger-clone {
+    display: block;
+  }
+  .navbar-center {
+    display: none;
+  }
+  .navbar-left {
+    width: 45%;
+    margin-left: 30px;
+  }
+  .navbar-right {
+    margin-right: 30px;
+  }
+  .content__center {
+    flex-direction: column;
+  }
+  .logo {
+    width: 90%;
+  }
+  .content__center-center {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .content__center-right {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-s {
+    width: 70%;
+  }
+  .text-s {
+    width: 30%;
+  }
+  .content__history-desc {
+    width: 65%;
+  }
+  .cooperation p:first-of-type {
+    font-size: 22px;
+  }
+  .jump-email span {
+    left: -6px;
+    padding: 20px 9px 5px 9px;
+    letter-spacing: -17px;
+  }
+  .bouncing-letter {
+    font-size: 43px;
+  }
+  .representation {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .content__center-center__achievements {
+    flex-wrap: wrap;
+  }
+  .mobile__block-cart {
+    flex-wrap: wrap;
+  }
+  .mobile__block-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .mobile__block-right {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hiring__block {
+    flex-direction: column;
+  }
+
+  .img__gallery-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bouncing-letter {
+    font-size: 34px;
+  }
+  .representation {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .logo {
+    width: 100%;
+  }
+  .awards h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .awards h3 {
+    font-size: 18px;
+  }
+  .jump-email span {
+    padding: 20px 8px 5px 8px;
+  }
+  .bouncing-letter {
+    font-size: 28px;
+  }
+  .representation {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .logo {
+    width: 100%;
+  }
 }

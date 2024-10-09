@@ -16,14 +16,17 @@ import movedImages from '../index/moveimages.js';
 import launchCursorMoving from '../index/cursormoving.js';
 import currentPage from '../index/currentpage.js';
 import currentYear from '../index/currentyear.js';
-import viteLogo from '/vite.svg';
+import getSizeOfTheWindow from '../index/windowsize.js';
 
 powerLoader();
 window.onscroll = function () {
   scrollFunction();
 };
 
+window.addEventListener('resize', getSizeOfTheWindow);
+
 document.addEventListener('DOMContentLoaded', () => {
+  getSizeOfTheWindow();
   caseStudy();
   myIntroduction();
   animationToRightSidebar();
@@ -32,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
   interObserver3();
   observerFirstGallery();
   observerSecondGallery();
-  emailDancing('hello@exgrid', '.jump-email-first');
-  emailDancing('info.com', '.jump-email-second');
+  emailDancing('prosperity.devops', '.jump-email-first');
+  emailDancing('@gmail.com', '.jump-email-second');
   scrollControl();
   openNav();
   movedImages();
@@ -42,5 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
   currentPage();
   currentYear();
 });
-
-

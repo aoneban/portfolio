@@ -21,8 +21,8 @@ window.onscroll = function () {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  emailDancing('hello@exgrid', '.jump-email-first');
-  emailDancing('info.com', '.jump-email-second');
+  emailDancing('prosperity.devops', '.jump-email-first');
+  emailDancing('@gmail.com', '.jump-email-second');
   currentPage();
   openNav();
   showContact('About\u00A0Me', 'contact');

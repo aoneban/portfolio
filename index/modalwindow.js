@@ -5,7 +5,7 @@ export default function openNav() {
 }
 
 function closeNav() {
-  const close = document.querySelector('.closebtn');
+  const close = document.querySelector('.closebtn-one');
   close.addEventListener('click', hideModalWindow);
 }
 

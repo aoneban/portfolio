@@ -24,6 +24,13 @@ window.onscroll = function () {
 };
 
 window.addEventListener('resize', getSizeOfTheWindow);
+window.addEventListener('resize', closeWindow);
+window.addEventListener('click', function (event) {
+  const current = event.target;
+  if (current.classList.contains('shadow-modal')) {
+    closeWindow();
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   getSizeOfTheWindow();
@@ -45,3 +52,35 @@ document.addEventListener('DOMContentLoaded', () => {
   currentPage();
   currentYear();
 });
+
+function launchBurgerMenu() {
+  const burger = document.querySelector('.burger-clone');
+  burger.addEventListener('click', () => {
+    const burg = document.querySelector('.shadow-modal');
+    const burgOne = document.querySelector('.first-modal');
+    const modal = document.querySelector('.modal');
+    modal.style.height = '100vh';
+    burg.style.height = '100vh';
+    burgOne.style.height = '100vh';
+    document.body.classList.add('no-scroll');
+  });
+}
+launchBurgerMenu();
+
+function closeBurgerMenu() {
+  const close = document.querySelector('.closebtn');
+  close.addEventListener('click', () => {
+    closeWindow();
+  });
+}
+closeBurgerMenu();
+
+function closeWindow() {
+  const burg = document.querySelector('.shadow-modal');
+  const burgOne = document.querySelector('.first-modal');
+  const modal = document.querySelector('.modal');
+  modal.style.height = '0';
+  burg.style.height = '0';
+  burgOne.style.height = '0';
+  document.body.classList.remove('no-scroll');
+}

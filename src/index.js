@@ -17,6 +17,8 @@ import launchCursorMoving from '../index/cursormoving.js';
 import currentPage from '../index/currentpage.js';
 import currentYear from '../index/currentyear.js';
 import getSizeOfTheWindow from '../index/windowsize.js';
+import manageToBurgerMenu from '../index/manageBurger.js';
+import { openOrCloseBurgerWindow, choseBurgerLink } from '../index/manageBurger.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -24,11 +26,13 @@ window.onscroll = function () {
 };
 
 window.addEventListener('resize', getSizeOfTheWindow);
-window.addEventListener('resize', closeWindow);
+window.addEventListener('resize', function () {
+  openOrCloseBurgerWindow(0, 'remove');
+});
 window.addEventListener('click', function (event) {
   const current = event.target;
   if (current.classList.contains('shadow-modal')) {
-    closeWindow();
+    openOrCloseBurgerWindow(0, 'remove');
   }
 });
 
@@ -51,36 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
   launchCursorMoving('.circle', -16, -16, 0.1);
   currentPage();
   currentYear();
+  manageToBurgerMenu();
+  choseBurgerLink();
 });
 
-function launchBurgerMenu() {
-  const burger = document.querySelector('.burger-clone');
-  burger.addEventListener('click', () => {
-    const burg = document.querySelector('.shadow-modal');
-    const burgOne = document.querySelector('.first-modal');
-    const modal = document.querySelector('.modal');
-    modal.style.height = '100vh';
-    burg.style.height = '100vh';
-    burgOne.style.height = '100vh';
-    document.body.classList.add('no-scroll');
-  });
-}
-launchBurgerMenu();
 
-function closeBurgerMenu() {
-  const close = document.querySelector('.closebtn');
-  close.addEventListener('click', () => {
-    closeWindow();
-  });
-}
-closeBurgerMenu();
-
-function closeWindow() {
-  const burg = document.querySelector('.shadow-modal');
-  const burgOne = document.querySelector('.first-modal');
-  const modal = document.querySelector('.modal');
-  modal.style.height = '0';
-  burg.style.height = '0';
-  burgOne.style.height = '0';
-  document.body.classList.remove('no-scroll');
-}

@@ -14,11 +14,24 @@ import fillBar from '../about/fillingbar.js';
 import interObserver4 from '../about/observer4.js';
 import interObserver5 from '../about/observer5.js';
 import currentYear from '../about/currentyear.js';
+import getSizeOfTheWindow from '../about/windowsize.js';
+import manageToBurgerMenu from '../about/manageBurger.js';
+import { openOrCloseBurgerWindow, choseBurgerLink } from '../about/manageBurger.js';
 
 powerLoader();
 window.onscroll = function () {
   scrollFunction();
 };
+window.addEventListener('resize', getSizeOfTheWindow);
+window.addEventListener('resize', function () {
+  openOrCloseBurgerWindow(0, 'remove');
+});
+window.addEventListener('click', function (event) {
+  const current = event.target;
+  if (current.classList.contains('shadow-modal')) {
+    openOrCloseBurgerWindow(0, 'remove');
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   emailDancing('prosperity.devops', '.jump-email-first');
@@ -35,5 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
   fillBar();
   interObserver4();
   interObserver5();
+  currentPage();
   currentYear();
+  manageToBurgerMenu();
+  choseBurgerLink();
 });

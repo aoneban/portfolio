@@ -1,5 +1,5 @@
 export default function aboutMe() {
-    const text = "Hi i'm Ashot,\u00A0Webflow Designer I\u00A0work as the\u00A0Creative Director\u00A0at Pe Creative Studioin Poznan.";
+    const text = "Hi i'm Ashot,\u00A0Webflow Designer I\u00A0work as the\u00A0Creative Director\u00A0at Pe Creative Studio\u00A0in Poznan.";
     const textContainer = document.querySelector('.about-me');
     const arr = text.split('');
   

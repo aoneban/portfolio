@@ -13,7 +13,6 @@ import launchCursorMoving from '../contact/cursormoving.js';
 import mailService from '../contact/mailservice.js';
 import currentPage from '../contact/currentpage.js';
 import currentYear from '../contact/currentyear.js';
-import getSizeOfTheWindow from '../contact/windowsize.js';
 import manageToBurgerMenu from '../contact/manageBurger.js';
 import { openOrCloseBurgerWindow, choseBurgerLink } from '../contact/manageBurger.js';
 
@@ -22,7 +21,6 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-window.addEventListener('resize', getSizeOfTheWindow);
 window.addEventListener('resize', function () {
   openOrCloseBurgerWindow(0, 'remove');
 });

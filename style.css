@@ -860,7 +860,7 @@ body.no-scroll {
 .wx-1,
 .wx-3,
 .wx-5 {
-  font-size: 55px;
+  font-size: 3.3vw;
   color: #181818;
   text-transform: uppercase;
   font-weight: 400;
@@ -868,14 +868,14 @@ body.no-scroll {
 
 .wx-2,
 .wx-6 {
-  font-size: 55px;
+  font-size: 3.3vw;
   color: #181818;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .wx-4 {
-  font-size: 55px;
+  font-size: 3.3vw;
   color: #f70354;
   text-transform: uppercase;
   font-weight: 700;
@@ -1645,6 +1645,13 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 1440px) {
+  .wx-1,
+  .wx-2,
+  .wx-3,
+  .wx-4,
+  .wx-5 .wx-6 {
+    font-size: calc(3.3vw + 12px);
+  }
   .connection-me {
     width: 95%;
     margin: 0 auto;
@@ -1726,11 +1733,19 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 768px) {
+  .title-menu h2 {
+    font-size: 2rem;
+  }
+  .img-project,
+  .img-project img {
+    width: 300px;
+    height: 200px;
+  }
   .address {
     padding-top: 0;
     text-align: center;
     display: block;
-}
+  }
   .block-contact {
     margin: 0 auto;
     width: 95%;
@@ -1807,13 +1822,30 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .img-project,
+  .img-project img {
+    width: 250px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .modal-wrapper {
+    gap: 2rem;
+  }
+  .title-menu h2 {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #map,
   .map-wrapper {
     height: 360px;
   }
   .gm-style div {
-    height: 60%!important;
+    height: 60% !important;
   }
   .connection-block ul li a {
     line-height: 2rem;

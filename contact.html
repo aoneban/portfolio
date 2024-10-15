@@ -125,6 +125,7 @@
                 <form id="contactForm" method="POST" action="/send-message">
                   <div class="change">
                     <label for="fname"></label>
+                    <p id="m-name" class="input-error"></p>
                     <input
                       type="text"
                       id="fname"
@@ -132,6 +133,7 @@
                       placeholder="Name"
                     />
                     <label for="email"></label>
+                    <p id="m-email" class="input-error"></p>
                     <input
                       type="email"
                       id="email"
@@ -150,13 +152,14 @@
                     </ul>
                   </div>
                   <label for="message"></label>
+                  <p id="m-message" class="input-error"></p>
                   <textarea
                     id="message"
                     name="message"
                     placeholder="Message"
                     style="height: 190px"
                   ></textarea>
-                  <input type="submit" value="Send Message" />
+                  <button type="submit" value="Send Message">Send Message</button>
                 </form>
               </div>
             </div>
@@ -292,6 +295,21 @@
       <div class="cursor"></div>
       <div class="circle"></div>
     </footer>
+    <div id="myModal" class="modal1">
+      <!-- Modal content -->
+      <div class="modal1-content">
+        <span class="close1">&times;</span>
+        <div class="modal1-body">
+          <div class="check-box">
+            <div class="check">
+              <i class="fa-solid fa-check fa-2xl" style="color: #ffffff;"></i>
+            </div>
+          </div>
+          <p>Your message has been sent successfully!</p>
+          <p>I will definitely contact you as soon as possible.</p>
+        </div>
+      </div>
+    </div>
     <script>
       ((g) => {
         var h,

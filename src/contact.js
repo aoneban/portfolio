@@ -14,7 +14,10 @@ import mailService from '../contact/mailservice.js';
 import currentPage from '../contact/currentpage.js';
 import currentYear from '../contact/currentyear.js';
 import manageToBurgerMenu from '../contact/manageBurger.js';
-import { openOrCloseBurgerWindow, choseBurgerLink } from '../contact/manageBurger.js';
+import {
+  openOrCloseBurgerWindow,
+  choseBurgerLink,
+} from '../contact/manageBurger.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -35,13 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
   emailDancing('prosperity.devops', '.jump-email-first');
   emailDancing('@gmail.com', '.jump-email-second');
   currentPage();
-  showContact("Contact\u00A0Me", 'contact');
+  showContact('Contact\u00A0Me', 'contact');
   launchCursorMoving('.cursor', -16, -16, 0.2);
   launchCursorMoving('.circle', -16, -16, 0.1);
   showBlocksContact();
   initMap();
   customOptions();
-  interObserver()
+  interObserver();
   openNav();
   scrollControl();
   mailService();
@@ -50,5 +53,4 @@ document.addEventListener('DOMContentLoaded', () => {
   manageToBurgerMenu();
   choseBurgerLink();
 });
-
 

@@ -1,6 +1,7 @@
 export default function myIntroduction() {
   const text = "Hi I'm Ashot,Frontend Developer";
   const textContainer = document.querySelector('.representation');
+  textContainer.textContent = '';
   const arr = text.split('');
 
   arr.forEach((char, index) => {

@@ -878,9 +878,10 @@ body.no-scroll {
   font-size: 3.3vw;
   color: #f70354;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #181818;
-  padding: 2px;
+  padding: 0px;
+  letter-spacing: -1px;
 }
 
 .img__gallery-wrapper {

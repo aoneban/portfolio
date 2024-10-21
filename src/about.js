@@ -52,3 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
   manageToBurgerMenu();
   choseBurgerLink();
 });
+
+document
+  .querySelector('.blog')
+  .addEventListener('click', () =>
+    alert(
+      'Friends, a little patience, this block will appear soon. Thanks for understanding.'
+    )
+  );

@@ -1,6 +1,6 @@
-export default function showContact(item, idName) {
+export default function showContact(item, idname) {
     const text = item;
-    const textContainer = document.getElementById(idName);
+    const textContainer = document.getElementById(idname);
     textContainer.textContent = '';
     const arr = text.split('');
   

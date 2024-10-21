@@ -1286,6 +1286,10 @@ input:focus {
   border-bottom: 1px solid #ede5e5;
 }
 
+.motto span {
+  font-weight: 700;
+}
+
 .text-septenary {
   color: #414141;
   padding: 45px 0;
@@ -1483,6 +1487,10 @@ pre {
   text-align: center;
   color: #181818;
   margin-bottom: 20px;
+}
+
+.title-animation span {
+  font-weight: 700;
 }
 
 .text-separation {

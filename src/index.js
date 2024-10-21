@@ -18,7 +18,10 @@ import currentPage from '../index/currentpage.js';
 import currentYear from '../index/currentyear.js';
 import getSizeOfTheWindow from '../index/windowsize.js';
 import manageToBurgerMenu from '../index/manageBurger.js';
-import { openOrCloseBurgerWindow, choseBurgerLink } from '../index/manageBurger.js';
+import {
+  openOrCloseBurgerWindow,
+  choseBurgerLink,
+} from '../index/manageBurger.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -59,4 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
   choseBurgerLink();
 });
 
-
+document
+  .querySelector('.blog')
+  .addEventListener('click', () =>
+    alert(
+      'Friends, a little patience, this block will appear soon. Thanks for understanding.'
+    )
+  );

@@ -295,7 +295,7 @@ body.no-scroll {
   font-size: 15px;
   color: #686868;
   font-weight: 400;
-  padding: 5px;
+  padding: 4px;
 }
 
 .achieve p:first-of-type {
@@ -1626,6 +1626,10 @@ input:checked + .slider:before {
   }
 }
 
+.burger-link:hover {
+  color: white;
+}
+
 .expir span {
   padding: 3px 12px;
   border-radius: 100px;
@@ -1693,7 +1697,7 @@ input:checked + .slider:before {
   .wx-3,
   .wx-4,
   .wx-5 .wx-6 {
-    font-size: calc(3.3vw + 12px);
+    font-size: calc(3.3vw + 7px);
   }
   .connection-me {
     width: 95%;
@@ -1733,7 +1737,10 @@ input:checked + .slider:before {
   }
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1150px) {
+  .bouncing-letter {
+    font-size: 90px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1750,12 +1757,8 @@ input:checked + .slider:before {
   .navbar-center a {
     margin-right: 40px;
   }
-
   .navbar-center {
     justify-content: start;
-  }
-  .bouncing-letter {
-    font-size: 90px;
   }
   .jump-email span {
     left: -6px;
@@ -1767,14 +1770,23 @@ input:checked + .slider:before {
     margin-right: 20px;
   }
   .representation {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 3.5rem;
+  }
+  .jump-email span {
+    left: -12px;
+  }
+  .bouncing-letter {
+    font-size: 67px;
   }
 }
 
 @media screen and (max-width: 868px) {
   .navbar-left {
     width: 25%;
+  }
+  .representation {
+    font-size: 2.7rem;
   }
 }
 
@@ -1868,6 +1880,17 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .jump-email span {
+    left: -6px;
+    padding: 20px 9px 5px 9px;
+    letter-spacing: -17px;
+  }
+  .bouncing-letter {
+    font-size: 43px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .img-project,
   .img-project img {
@@ -1877,6 +1900,10 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 537px) {
+  .representation {
+    line-height: 3rem;
+    font-size: 2.4rem;
+  }
   .modal-wrapper {
     gap: 2rem;
   }
@@ -1886,6 +1913,10 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 480px) {
+  .representation {
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+  }
   #map,
   .map-wrapper {
     height: 360px;
@@ -1929,11 +1960,7 @@ input:checked + .slider:before {
     letter-spacing: -17px;
   }
   .bouncing-letter {
-    font-size: 43px;
-  }
-  .representation {
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: 35px;
   }
   .content__center-center__achievements {
     flex-wrap: wrap;
@@ -1969,14 +1996,26 @@ input:checked + .slider:before {
     font-size: 34px;
   }
   .representation {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2.6rem;
   }
   .logo {
     width: 100%;
   }
   .awards h3 {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .representation {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .jump-email span {
+    padding: 20px 8px 5px 8px;
+  }
+  .bouncing-letter {
+    font-size: 28px;
   }
 }
 
@@ -2000,17 +2039,52 @@ input:checked + .slider:before {
   .awards h3 {
     font-size: 18px;
   }
-  .jump-email span {
-    padding: 20px 8px 5px 8px;
-  }
-  .bouncing-letter {
-    font-size: 28px;
-  }
-  .representation {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
   .logo {
     width: 100%;
+  }
+}
+
+@media (hover: none) {
+  a:hover,
+  button:hover {
+    background-color: inherit;
+    color: inherit;
+    box-shadow: none;
+    transform: none;
+  }
+  .navbar-center a:hover {
+    color: inherit;
+  }
+  .content__center-center__cases:hover .tags a {
+    color: inherit;
+    border: 1px solid inherit;
+    transition: none;
+  }
+  .banner-sidebar a:hover span:first-of-type::before {
+    background-color: inherit;
+  }
+  
+  .banner-sidebar:hover a span {
+    color: inherit;
+  }
+  
+  .banner-sidebar:hover a span i {
+    color: inherit;
+  }
+  .content__history-wrapper:hover {
+    text-decoration: none;
+  }
+  
+  .content__history-wrapper:hover *,
+  .content__history-wrapper:hover p,
+  .content__history-wrapper:hover h1,
+  .content__history-wrapper:hover h2,
+  .content__history-wrapper:hover h3,
+  .content__history-wrapper:hover h4,
+  .content__history-wrapper:hover h5,
+  .content__history-wrapper:hover h6,
+  .content__history-wrapper:hover span,
+  .content__history-wrapper:hover a {
+    color: inherit;
   }
 }

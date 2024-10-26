@@ -1714,15 +1714,18 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 1305px) {
+  .motto {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .connection-block ul li a {
     line-height: 2rem;
   }
   .text-septenary {
     padding: 25px 0;
-  }
-  .motto {
-    font-size: 34px;
   }
   .item1 {
     flex: 1.08;
@@ -1731,7 +1734,9 @@ input:checked + .slider:before {
   .content__center-center {
     width: 50%;
   }
-
+  .motto {
+    font-size: 22px;
+  }
   .content__center-right {
     width: 30%;
   }
@@ -1743,9 +1748,18 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 1060px) {
+  .navbar-center a {
+    margin-right: 40px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #ffemail {
     right: calc(12% - 30px);
+  }
+  .motto {
+    font-size: 40px;
   }
   .item1 {
     flex: 2.08;
@@ -1753,9 +1767,6 @@ input:checked + .slider:before {
   }
   .intentions {
     flex-wrap: wrap;
-  }
-  .navbar-center a {
-    margin-right: 40px;
   }
   .navbar-center {
     justify-content: start;
@@ -1782,6 +1793,9 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 868px) {
+  .motto {
+    font-size: 34px;
+  }
   .navbar-left {
     width: 25%;
   }
@@ -1899,6 +1913,21 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 605px) {
+  .title-animation {
+    font-size: 35px;
+  }
+  .motto {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .motto {
+    font-size: 27px;
+  }
+}
+
 @media screen and (max-width: 537px) {
   .representation {
     line-height: 3rem;
@@ -1912,7 +1941,16 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 515px) {
+  .motto {
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  .title-animation {
+    font-size: 27px;
+  }
   .representation {
     font-size: 1.9rem;
     line-height: 2.7rem;
@@ -1929,9 +1967,6 @@ input:checked + .slider:before {
   }
   .contact {
     margin: 50px auto;
-  }
-  .title-animation {
-    font-size: 34px;
   }
   .motto {
     font-size: 30px;
@@ -1982,13 +2017,19 @@ input:checked + .slider:before {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 465px) {
   .motto {
     font-size: 25px;
   }
-  .title-animation {
-    font-size: 28px;
+}
+
+@media screen and (max-width: 420px) {
+  .motto {
+    font-size: 22px;
   }
+}
+
+@media screen and (max-width: 400px) {
   .send-message a {
     font-size: 16px;
   }
@@ -2011,6 +2052,9 @@ input:checked + .slider:before {
     font-size: 1.4rem;
     line-height: 2rem;
   }
+  .title-animation {
+    font-size: 23px;
+  }
   .jump-email span {
     padding: 20px 8px 5px 8px;
   }
@@ -2019,19 +2063,19 @@ input:checked + .slider:before {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .motto {
+    font-size: 19px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .faq-two__switch {
     margin-right: 0;
   }
-  .title-animation {
-    font-size: 23px;
-  }
   .connection-block ul li a {
     font-size: 0.9rem;
     line-height: 1.5rem;
-  }
-  .motto {
-    font-size: 19px;
   }
   .item-block-main {
     padding: 29px;

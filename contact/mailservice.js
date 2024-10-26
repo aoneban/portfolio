@@ -59,21 +59,14 @@ export default function mailService() {
         cleanFields();
         if (response.ok) {
           const result = await response.json();
-          const modal = document.getElementById("myModal");
-          modal.style.display = "block";
-          document.body.style.overflow = 'hidden';
-          const span = document.getElementsByClassName("close1")[0];
-          span.addEventListener('click', () => {
-            modal.style.display = "none";
-            document.body.style.overflow = 'visible';
-          })
+          waysToConnections("myModal", "close1")
         } else {
           console.error('Error:', response.statusText);
           alert('Error sending message.');
         }
       } catch (error) {
         console.error('Error:', error);
-        alert('Error sending message.');
+        waysToConnections("myModalReject", "close2")
       }
     });
 }
@@ -92,9 +85,28 @@ function cleanFields() {
 }
 
 window.addEventListener('click', function(event) {
-  const modal = document.getElementById("myModal");
+  closeConnectionWindow("myModal", event)
+})
+
+window.addEventListener('click', function(event) {
+  closeConnectionWindow("myModalReject", event)
+})
+
+function waysToConnections(item1, item2){
+  const modal = document.getElementById(item1);
+  modal.style.display = "block";
+  document.body.style.overflow = 'hidden';
+  const span = document.getElementsByClassName(item2)[0];
+  span.addEventListener('click', () => {
+    modal.style.display = "none";
+    document.body.style.overflow = 'visible';
+  })
+}
+
+function closeConnectionWindow(item){
+  const modal = document.getElementById(item);
   if (event.target == modal) {
     modal.style.display = "none";
     document.body.style.overflow = 'visible';
   }
-})
+}

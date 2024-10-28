@@ -1,6 +1,7 @@
 export default function showContact(item, idname) {
     const text = item;
     const textContainer = document.getElementById(idname);
+    textContainer.innerHTML = '';
     const arr = text.split('');
   
     arr.forEach((char, index) => {

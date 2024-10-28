@@ -1087,8 +1087,8 @@ body.no-scroll {
   margin: 20px 0;
 }
 
-.block-contact p {
-  margin: 20px 0;
+.block-contact p:last-of-type{
+  margin-bottom: 20px;
 }
 
 .contact__wrapper,

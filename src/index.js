@@ -22,6 +22,7 @@ import {
   openOrCloseBurgerWindow,
   choseBurgerLink,
 } from '../index/manageBurger.js';
+import { modalVideo } from '../index/modalvideo.js';
 
 powerLoader();
 window.onscroll = function () {
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   currentYear();
   manageToBurgerMenu();
   choseBurgerLink();
+  modalVideo();
 });
 
 document

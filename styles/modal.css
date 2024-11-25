@@ -331,3 +331,58 @@
     width: 95%;
   }
 }
+
+.modal-3 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content-3 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.close-3 {
+  color: #FFFFFF;
+  float: right;
+  font-size: 58px;
+  font-weight: normal;
+  align-self: flex-start;
+  position: relative;
+  bottom: 60px;
+  right: -10px;
+}
+.close-3:hover,
+.close-3:focus {
+  color: #f70354;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content-3 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoomos;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoomos {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoomos {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
